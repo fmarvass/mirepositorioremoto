@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <!--Funcion que realiza login-->
+    <!--asdasdasdasd-->
+    <head>
+        <meta charset="UFT-8"/>
+        <title>Mi primer pagina web</title> <!--Titulo-->
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head> <!--Cabeza-->
+    <body>
+        <div class="container-nav">
+            <nav class="navbar"  role="navigation">
+                <a href="index.html" class="brand"><img src="asd-PhotoRoom.png-PhotoRoom.png" alt="tituloPagina"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+        </div>
+        <div class="container-contacto">
+            <h1>Contacto</h1>
+            <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+            <form id="myForm" >
+                <label for="name">Nombre: </label>
+                <input type="name" name="name" id="name" required>
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <br>
+                <label for="phone">Telefono: </label>
+                <input type="phone" name="phone" id="phone" required>
+                <br>
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="script.js"></script>
+        <footer>
+            <p>&copy; 2023 Mi primer Website. Todos los derechos reservados.</p>
+            <button onclick="showAlert()">Haz click en mi</button>
+        </footer>
+    </body>
+</html>
