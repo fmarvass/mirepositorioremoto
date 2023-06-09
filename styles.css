@@ -37,12 +37,19 @@ body {
  /* OPEN diseño sección about*/
 .container-about{
   display: flex;
-  flex-wrap: wrap; 
+  flex-direction:column; 
+  align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 10px;
 }
 
+.row{
+  display: flex;
+}
+
 .container-about img {
+  display: flex;
   margin: 0 10px; /* Agrega margen horizontal entre las imágenes */
   margin-bottom: 20px;
   width: 300px;
@@ -53,9 +60,11 @@ body {
  /* OPEN diseño sección contact*/
 .container-contact{
   display: flex;
-  flex-direction: column;
-  margin: 10px;
+  flex-direction:column; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  margin: 10px;
 }
 
 .myForm {
@@ -105,10 +114,6 @@ body {
   }
   /* OPEN media querys responsive*/
   @media (max-width: 768px) {
-    .column {
-      flex: 100%;
-    }
-  
     .nav-links {
       display: none;
     }
@@ -138,12 +143,11 @@ body {
       gap: 70px;
       font-size: 40px;
     }
-  
-    .container-flexbox {
-      flex-direction: column;
-    }
-    .column, .video-container {
+    .column, .video-container, .row {
       flex: 100%;
+    }
+    .row{
+      flex-direction: column;
     }
   }
   /* FINISH media querys responsive*/
