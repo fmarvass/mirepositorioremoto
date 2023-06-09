@@ -204,9 +204,10 @@ body {
 
 
 .container-index{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin: 10px;
 }
 
 .container-about{
@@ -216,7 +217,7 @@ body {
   margin: 10px;
 }
 
-.container-about .row{
+.container-contacto{
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
@@ -229,23 +230,20 @@ body {
     width: 300px;
     height: 300px;
   }
-
-  .container-contacto{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    margin: 10px;
-  }
+  
   .container-contacto input{
+    margin: 0 10px;
     width: 150px; 
     height: 20px;
   }
   .container-contacto textarea{
+    margin: 0 10px;
     width: 494px; 
     height: 108px;
   }
 
   .container-contacto button{
+    margin: 0 10px;
     height: 50px;
     width: 100px;
     margin-left: 200px;
@@ -355,18 +353,18 @@ body {
     text-align: center;
   }
 
-  /* Diseño responsivo de index.html*/
+  /* Diseño responsivo de index.html
   .container-index {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  /*
+  
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }*/
+  }
   
   .column {
     flex: 1;
@@ -384,4 +382,4 @@ body {
     .column, .video-container {
       flex: 100%;
     }
-  }
+  }*/
