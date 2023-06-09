@@ -232,12 +232,9 @@ body {
 
   .container-contacto{
     display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 50px;
-    text-align: left;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 10px;
   }
   .container-contacto input{
     width: 150px; 
