@@ -14,23 +14,27 @@ body {
     padding: 20px;
   }
   
-  /* Estilos de la barra de navegación Agrega margen horizontal entre las imágenes */
+  /* OPEN diseño barra de navegacion*/
   .container-nav {
     display: flex;
     padding: 10px;
     height: 50px;
     background-color: black;
   }
+  /* FINISH diseño sección index*/
 
-
+/* OPEN diseño sección index*/ 
 .container-index{
   display: flex;
-  flex-wrap:wrap; 
+  flex-direction:column; 
+  align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 10px;
-
 }
+/* FINISH diseño sección index*/
 
+ /* OPEN diseño sección about*/
 .container-about{
   display: flex;
   flex-wrap: wrap; 
@@ -38,39 +42,35 @@ body {
   margin: 10px;
 }
 
-.container-contacto{
+.container-about img {
+  margin: 0 10px; /* Agrega margen horizontal entre las imágenes */
+  margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+}
+  /* FINISH diseño sección about*/
+
+ /* OPEN diseño sección contact*/
+.container-contact{
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
+  flex-direction: column;
   margin: 10px;
+  text-align: center;
 }
 
-.container-about img {
-    margin: 0 10px; /* Agrega margen horizontal entre las imágenes */
-    margin-bottom: 20px;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .container-contacto input{
-    margin: 0 10px;
-    width: 150px; 
-    height: 20px;
-  }
-  .container-contacto textarea{
-    margin: 0 10px;
-    width: 494px; 
-    height: 108px;
-  }
+.myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Añadida propiedad para centrar horizontalmente */
+  justify-content: center; /* Añadida propiedad para centrar verticalmente */
+}
 
-  .container-contacto button{
-    margin: 0 10px;
-    height: 50px;
-    width: 100px;
-    margin-left: 200px;
-    margin-top: 20px;
-  }
-  
+.myForm input,
+.myForm textarea {
+  width: 200px;
+}
+ /* FINISH diseño sección contact*/
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -103,7 +103,7 @@ body {
   .button-menu-toggle {
     display: none;
   }
-  
+  /* OPEN media querys responsive*/
   @media (max-width: 768px) {
     .column {
       flex: 100%;
@@ -142,7 +142,11 @@ body {
     .container-flexbox {
       flex-direction: column;
     }
+    .column, .video-container {
+      flex: 100%;
+    }
   }
+  /* FINISH media querys responsive*/
   
   /* Estilos del contenido de servicios */
   .services {
@@ -172,35 +176,4 @@ body {
     color: #fff;
     padding: 50px;
     text-align: center;
-  }
-
-  /* Diseño responsivo de index.html
-  .container-index {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .column {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .video-container {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
-  */
-  @media (max-width: 768px) {
-    .column, .video-container {
-      flex: 100%;
-    }
   }
