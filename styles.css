@@ -84,8 +84,6 @@ body {
  .container-services {
   display: flex;
   flex-direction:column; 
-  align-items: center;
-  justify-content: center;
   text-align: center;
   margin: 10px;
 }
@@ -100,8 +98,10 @@ body {
 }
 
 .service-image {
-  width: 300px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 400px;
 }
 /* FINISH diseño servicios */
 
