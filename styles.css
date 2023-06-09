@@ -357,3 +357,34 @@ body {
     padding: 50px;
     text-align: center;
   }
+
+  /* Diseño responsivo de index.html*/
+  .container-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /*
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }*/
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .video-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .column, .video-container {
+      flex: 100%;
+    }
+  }
